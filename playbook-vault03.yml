@@ -1,0 +1,13 @@
+---
+- name: encrypt a string
+  hosts: localhost
+
+  # edit the following section with your string
+  vars:
+    mypass: pAssw0rD
+
+  tasks:
+    - name: print an encrypted string
+      debug:
+         msg: "{{ mypass }}"
+
